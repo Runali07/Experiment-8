@@ -77,6 +77,24 @@ function App() {
             styleOverrides: {
               root: {
                 boxShadow: "0 8px 24px rgba(233, 30, 99, 0.12)",
+                color: mode === "light" ? "#2d1b2e" : "#ffffff",
+                backgroundImage: "none",
+              },
+            },
+          },
+
+          MuiTypography: {
+            styleOverrides: {
+              root: {
+                color: mode === "light" ? "#2d1b2e" : "#ffffff",
+              },
+            },
+          },
+
+          MuiLink: {
+            styleOverrides: {
+              root: {
+                color: mode === "light" ? "#d81b60" : "#f8bbd0",
               },
             },
           },
@@ -92,6 +110,7 @@ function App() {
                 "& .MuiOutlinedInput-root": {
                   borderRadius: 12,
                   backgroundColor: mode === "light" ? "#fffafb" : "#3a223d",
+                  color: mode === "light" ? "#2d1b2e" : "#ffffff",
                   "& fieldset": {
                     borderColor: "#f8bbd0",
                   },
@@ -102,6 +121,9 @@ function App() {
                     borderColor: "#e91e63",
                     borderWidth: "2px",
                   },
+                },
+                "& .MuiInputBase-input": {
+                  color: mode === "light" ? "#2d1b2e" : "#ffffff",
                 },
                 "& .MuiInputLabel-root": {
                   color: mode === "light" ? "#ad1457" : "#f8bbd0",
